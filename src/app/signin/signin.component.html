@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin</title>
+    <style>
+        label{
+            margin-left: 50px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        a{
+           
+            color: rgb(14, 0, 0);
+            font-weight: bolder;
+
+        }
+        button{
+            background-color: black;
+            color: white;
+            font-size: 15px;
+        }
+       
+    </style>
+</head>
+<body style="margin-left:35%; margin-top:10%; ">
+    <form action="">
+        <fieldset style="height: 200px; width:390px; background-color: rgb(144, 16, 218); border-radius: 20px; box-shadow: 10px; border-style: double;">
+            <legend style="color: dark rgb(246, 241, 245); font-size: 20px; font-family:sans-serif; font-style: italic; margin-left: 130px; box-sizing: border-box; border-radius: 4px;  color: white;">Login</legend>
+            <br>
+            <label for="">Username </label>
+            <input type="text" #user>
+            <br>
+            <br>
+            <label for="">Password</label>
+            <input type="password" name="" id="" #pass>
+            <br><br>
+            <button style="margin-left: 170px;" (click)="getvalue(user.value,pass.value)" > Login</button>
+           
+        </fieldset>
+    </form>
+</body>
+</html>
+<h3 style="margin-left:550px ;">Welcome</h3>
+<p style="margin-left: 550px;font-weight: bolder;">Username is: {{displayval1}}</p>
+<p style="margin-left: 550px;font-weight: bolder;">Password is: {{displayval2}}</p>
