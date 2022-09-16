@@ -11,6 +11,7 @@ import { SearchComponent } from './search/search.component';
 
 import { ContactusComponent } from './contactus/contactus.component';
 import { FormsModule } from '@angular/forms';
+import { VehiclesComponent } from './vehicles/vehicles.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +23,7 @@ import { FormsModule } from '@angular/forms';
     SearchComponent,
    
     ContactusComponent,
+        VehiclesComponent,
    
   ],
   imports: [

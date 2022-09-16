@@ -1,0 +1,33 @@
+<marquee behavior="" direction="right" style="color:blue ; font-weight: bolder; font-size: large;">Vehicle Toys Flat 20% Discount</marquee>
+<div *ngFor="let product of products" style="float: left;" [ngSwitch]="product.Status">
+    <div class="row" style="height:550px;border-radius: 5px solid black;">
+        <div class="card col-sm-4 "
+            style="width: 300px; margin-left: 100px;margin-bottom: 100px;border-radius: 5px solid black;">
+            <img [src]="product.image" class="card-img-top" alt="..."
+                style="margin-left: 30px; margin-top:50px; height:220px; width: 220px;">
+            <div class="card-body" style="border-radius: 5px solid black;">
+                <u>
+                    <h5 class="card-title" [style.margin-left.px]="'80'" [style.font-size.px]="'22'"
+                        [style.color]="'darkblue'" [style.font-style]="'italic'">{{product.pname}}</h5>
+                </u>
+                
+                <p [style.color]="getColor()" [style.font-weight]="'bold'">{{product.pdescription}}</p>
+                <p [style.color]="'darkmagenta'" [style.font-weight]="'bold'">Price: {{product.price |currency:'INR'}}
+                </p>
+
+
+                <h5 *ngSwitchCase="'In Stock'" class="text-success">
+                    {{product.Status | uppercase}}
+                </h5>
+                <h5 *ngSwitchCase="'Out of Stock'" class="text-danger">
+                    {{product.Status | lowercase}}
+                </h5>
+                <h5 *ngSwitchDefault class="text-warning">
+                    {{product.Status}}
+                </h5><button style="margin-left: 140px; background-color: blanchedalmond; border-style: none;">Add to
+                    Cart</button>
+
+            </div>
+        </div>
+    </div>
+</div>

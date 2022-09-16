@@ -9,11 +9,7 @@ export class NavbarComponent implements OnInit {
   title="Toy-Mart"
   public image="https://dcassetcdn.com/design_img/1580/1427/1427_13937_1580_image.jpg";
   
-  onSearch()
-  {
-    alert("Will contact shortly");
-  }
-
+  
   
   productentered: string=' '
 
