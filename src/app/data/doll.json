@@ -1,0 +1,45 @@
+[
+    {
+        "pid":1,
+        "pname":"Teddy Bear",
+        "pdescription":"Emporium 2 Feet Soft Teddy Bear Red 60.20 cm ( Red ) - 60.2 cm  (Red)",
+        "price":4999,
+        "img":"https://rukminim1.flixcart.com/image/832/832/l0y6qa80/stuffed-toy/t/0/x/3-feet-very-cute-long-soft-hugable-teddy-bear-best-for-gift-85cm-original-imagcm97darruepm.jpeg?q=70"
+    },
+    {
+        "pid":2,
+        "pname":"Mickey Mouse",
+        "pdescription":"Minnie Mouse Soft Toy Mouse Stuffed Soft Toy, 60 cm - 60 cm (Red) - 60 cm  (Red)",
+        "price":1000,
+        "img":"https://rukminim1.flixcart.com/image/416/416/kkoc70w0/stuffed-toy/n/c/g/mickey-mouse-soft-stuffed-toys-30-cm-30-cm-multicolor-30-gi4n-original-imafzynyqdwhur2g.jpeg?q=70"
+    },
+    {
+        "pid":3,
+        "pname":"Steffi Love Animal Doctor",
+        "pdescription":"This Steffi doll acts as a veterinary and comes up with OP table, two different pets and twenty four other accessories. ",
+        "price":7000,
+        "img":"https://d2s7hpbx4rtiif.cloudfront.net/catalog/product/cache/a3312d7b1b11d5e88bb34e863cca9093/s/i/simba_steffi_love_animal_doctor-1.jpg"
+    },
+    {
+        "pid":4,
+        "pname":"Puppy Doll",
+        "pdescription":"Cute Sitting Puppy Dog Doll Toy for Kid - 28 cm (Yellow)",
+        "price":2500,
+        "img":"https://hamleysgumlet.gumlet.io/product/492410011/665/492410011-1.jpeg"
+    },
+    {
+        "pid":5,
+        "pname":"Mermaid Doll",
+        "pdescription":"Lil'ted SUPER SOFT CUTE MERMAID DOLL 48CM, PINK COLOUR",
+        "price":1500,
+        "img":"https://hamleysgumlet.gumlet.io/product/491634990/665/491634990-1.jpg"
+    },
+    {
+        "pid":6,
+        "pname":"Disney Frozen Fashion Doll",
+        "pdescription":"The Elsa toy has her long blonde hair styled in a braid, and she is wearing her fun blue travel outfit ",
+        "price":6500,
+        "img":"https://rukminim1.flixcart.com/image/832/832/k391w280/doll-doll-house/q/u/4/fashion-doll-disney-frozen-original-imafmezvzzyhg9ty.jpeg?q=70"
+    }
+
+]

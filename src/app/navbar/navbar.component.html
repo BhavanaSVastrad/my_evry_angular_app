@@ -1,16 +1,17 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
    
-    <p style="padding-top: 15px; font-weight:bolder;">{{title}}</p>
+    <p style="padding-top: 15px; font-weight:bolder; color: rgb(50, 20, 248); font-size: larger; text-shadow: blue; ">{{title}}</p>
     <img [src]="image" alt="" height="50px" width="50px">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
      
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" [style.font-weight]="'bold'">
+        <i class="fa fa-home" aria-hidden="true" style="margin-top: 13px;"></i>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" routerLink="">Home</a>
+          <a class="nav-link active" aria-current="page" routerLink="" [style.font-weight]="'bold'">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#" routerLink="signin">SignIn</a>
@@ -19,24 +20,29 @@
           <a class="nav-link" href="#" routerLink="signup">SignUp</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" routerLink="contactus">Contact</a>
+          <a class="nav-link" href="#" routerLink="contactus">Query</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="deals">Deals</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Categories
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Dolls</a></li>
+            <li><a class="dropdown-item" routerLink="dolls">Dolls</a></li>
             <li><a class="dropdown-item" routerLink="vehicles">Vehicles</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Games</a></li>
+   
+            <li><a class="dropdown-item" routerLink="games">Games</a></li>
+            <li><a class="dropdown-item" routerLink="furniture">Kids Furniture</a></li>
+
           </ul>
         </li>
        
       </ul>
       <form class="d-flex">
         <input type="text" #productname placeholder="Enter product name" style="border-radius:10px;">&nbsp;
-        <button class="btn btn-outline-success" type="submit" (click)="search_product(productname.value);productname.value=''" style="border-radius:10px;">Search</button>
+        <button class="btn btn-outline-success" type="submit" (click)="search_product(productname.value);productname.value=''" style="border-radius:10px;"><i class="fa fa-search" aria-hidden="true"></i></button>
         <app-search [product]="productentered"></app-search>
       </form>
 

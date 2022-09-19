@@ -12,6 +12,16 @@ import { SearchComponent } from './search/search.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { FormsModule } from '@angular/forms';
 import { VehiclesComponent } from './vehicles/vehicles.component';
+import { DollsComponent } from './dolls/dolls.component';
+import { GamesComponent } from './games/games.component';
+import { GamesdealComponent } from './games/gamesdeal/gamesdeal.component';
+import { CounterComponent } from './counter/counter.component';
+import { CounterchildComponent } from './counter/counterchild/counterchild.component';
+import { AdvertisementComponent } from './advertisement/advertisement.component';
+import { AllcategoriesComponent } from './allcategories/allcategories.component';
+import { DealsComponent } from './deals/deals.component';
+import { ToymartComponent } from './deals/toymart/toymart.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +34,16 @@ import { VehiclesComponent } from './vehicles/vehicles.component';
    
     ContactusComponent,
         VehiclesComponent,
+        DollsComponent,
+        GamesComponent,
+        GamesdealComponent,
+        CounterComponent,
+        CounterchildComponent,
+        AdvertisementComponent,
+        AllcategoriesComponent,
+        DealsComponent,
+        ToymartComponent,
+     
    
   ],
   imports: [

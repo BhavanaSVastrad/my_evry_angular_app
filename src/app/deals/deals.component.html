@@ -1,0 +1,29 @@
+<div class="card-body col-lg-12">
+    <div class="row" style="margin-top:10px;border-style:solid;border-color:black;border-radius:15px;">
+        <div class="col-lg-3">
+            <!--Property Binding-->
+            <img [src]="product.img">
+        </div>
+        <div class="col-lg-9" style="margin-top:20px;">
+            <!--Interpolation Binding-->
+            <div style="color:rgb(220, 20, 163) ; font-weight:bold;">
+                {{product.pname | uppercase}}
+                
+                <span (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span>
+                <div style="margin-left: 400px; height:40px;width: 40px; color: red;" class="like">
+                    <span  (click)="showliketoggle()" [ngClass]="togglelike()"></span>
+                </div>
+                
+            </div>
+            <hr>
+            <div [hidden]="productDetail" style="color:olivedrab ; font-weight:bold;">
+               {{product.pdescription}}
+             
+              <p style="color: rgb(119, 42, 242);">
+                <br> Price: {{product.price | currency:'INR'}}
+             </p>
+                <br>
+                <app-counter></app-counter>
+            </div>
+        </div>
+    </div>

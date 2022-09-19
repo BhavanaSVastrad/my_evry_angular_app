@@ -1,0 +1,31 @@
+
+<div *ngFor="let w of washingmach" style="border:none;">
+    <div class="row">
+       
+            <div class="card-body col-lg-12">
+                <div class="row" style="margin-top:10px;border-style:solid;border-color:rgb(154, 40, 241);border-radius:15px; border-width: 3px;">
+                    <div class="col-lg-3">
+                      
+                        <img [src]="w.img">
+                       
+                    </div>
+                    <div class="col-lg-9" style="margin-top:20px;">
+                       
+                        <div [style.font-weight]="'bold'" [style.font-style]="'italic'" [style.color]="'magenta'" >
+                            {{w.pname | uppercase}}
+                            <span (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></span>
+                        </div>
+                        <hr>
+                        <div [hidden]="productDetail" [style.font-weight]="'bold'" [style.font-style]="'italic'" [style.color]="'blue'">
+                            {{w.pdescription}}
+                            <p [style.font-style]="'italic'" [style.color]="'red'">
+                            Price: {{w.price | currency:'INR'}}
+                            </p>
+                            <app-counter></app-counter>
+                          
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
