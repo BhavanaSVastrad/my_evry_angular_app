@@ -1,5 +1,74 @@
-<h3>Add Query</h3>
-<label for="">Query:</label>
-<input type="text" [(ngModel)]="query">
-<hr>
-<button (click)="onqueryadded()" >Add Query</button>
+<div class="container-fluid flex-grow-1 ">
+    <div class="row py-5" *ngFor="let a of all">
+      <div class="col-lg-12  text-white text-center">
+       
+                   <img [src]="a.img" alt="" height="300px" width="1200px">   
+       
+    </div>
+  </div>
+</div>
+
+
+
+
+<footer class="bg-white">
+  <div class="container py-5" *ngFor="let a of all">
+    <div class="row py-3">
+
+      <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+        <h6 class="text-uppercase font-weight-bold mb-4">About</h6>
+        <ul class="list-unstyled mb-0">
+          
+            <p>
+                {{a.details}}
+                 </p>
+        </ul>
+      </div>
+
+
+      
+      <div class="col-lg-2 col-md-6 mb-4 mb-lg-0" style="margin-left: 100px;">
+        <h6 class="text-uppercase font-weight-bold mb-4">Policy</h6>
+        <ul class="list-unstyled mb-0">
+          <li class="mb-2"><a href="#" class="text-muted">Return Policy</a></li>
+          <li class="mb-2"><a href="#" class="text-muted">Terms Of Use</a></li>
+          <li class="mb-2"><a href="#" class="text-muted">Security</a></li>
+          <li class="mb-2"><a href="#" class="text-muted">Privacy</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-md-6 mb-4 mb-lg-0" *ngFor="let a of all">
+        <h6 class="text-uppercase font-weight-bold mb-4">Company </h6>
+        <ul class="list-unstyled mb-0">
+            <h4>{{a.name}}</h4>
+          <img [src]="a.logo" alt="" height="100px" width="100px">
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-lg-0">
+        <h6 class="text-uppercase font-weight-bold mb-4">Contact Us</h6>
+       <p>
+       Call/Whatsapp :{{a.phonenumber}} <br>
+       Mail Id  :{{a.gmail}}
+
+
+       </p>
+        <ul class="list-inline mt-4">
+          <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i class="fab  fa-2x fa-twitter"></i></a></li>
+          <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i class="fab fa-2x fa-facebook-f"></i></a></li>
+          <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i class="fab fa-2x fa-instagram"></i></a></li>
+          <li class="list-inline-item"><a href="#" target="_blank" title="pinterest"><i class="fab fa-2x fa-youtube"></i></a></li>
+          <li class="list-inline-item"><a href="#" target="_blank" title="vimeo"><i class="fab fa-2x fa-google"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <hr class="p-0 m-0 b-0">
+
+ 
+  <div class="bg-light py-2">
+    <div class="container text-center">
+      <p class="text-muted mb-0 py-2">&copy; 2022 Toy-Mart All rights reserved.</p>
+      
+      </div>
+    </div>
+  
+</footer>

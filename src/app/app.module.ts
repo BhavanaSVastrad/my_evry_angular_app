@@ -21,6 +21,7 @@ import { AdvertisementComponent } from './advertisement/advertisement.component'
 import { AllcategoriesComponent } from './allcategories/allcategories.component';
 import { DealsComponent } from './deals/deals.component';
 import { ToymartComponent } from './deals/toymart/toymart.component';
+import { FurnitureComponent } from './furniture/furniture.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { ToymartComponent } from './deals/toymart/toymart.component';
         AllcategoriesComponent,
         DealsComponent,
         ToymartComponent,
+        FurnitureComponent,
      
    
   ],

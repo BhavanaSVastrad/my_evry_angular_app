@@ -10,7 +10,8 @@ import { VehiclesComponent } from './vehicles/vehicles.component';
 import { DollsComponent } from './dolls/dolls.component';
 import { GamesComponent } from './games/games.component';
 import { ToymartComponent } from './deals/toymart/toymart.component';
-
+import { AllcategoriesComponent } from './allcategories/allcategories.component';
+import { FurnitureComponent } from './furniture/furniture.component';
 const routes: Routes = [
   {path:'',component:CarouselComponent},
   
@@ -21,6 +22,8 @@ const routes: Routes = [
   {path:'dolls',component:DollsComponent},
   {path:'games',component:GamesComponent},
   {path:'deals',component:ToymartComponent},
+  {path:'categories',component:AllcategoriesComponent},
+  {path:'furniture',component:FurnitureComponent}
 
 ];
 
