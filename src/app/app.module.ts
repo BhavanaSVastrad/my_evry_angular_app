@@ -3,9 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './navbar/navbar.component';
-import { SigninComponent } from './signin/signin.component';
-import { SignupComponent } from './signup/signup.component';
+
 import { CarouselComponent } from './carousel/carousel.component';
 import { SearchComponent } from './search/search.component';
 
@@ -22,6 +22,12 @@ import { AllcategoriesComponent } from './allcategories/allcategories.component'
 import { DealsComponent } from './deals/deals.component';
 import { ToymartComponent } from './deals/toymart/toymart.component';
 import { FurnitureComponent } from './furniture/furniture.component';
+import { RegisterComponent } from './register/register.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+
+import { ProductdetailsComponent } from './productdetails/productdetails.component';
+
 
 @NgModule({
   declarations: [
@@ -29,8 +35,7 @@ import { FurnitureComponent } from './furniture/furniture.component';
 
     NavbarComponent,
     CarouselComponent,
-    SigninComponent,
-    SignupComponent,
+   
     SearchComponent,
    
     ContactusComponent,
@@ -45,13 +50,19 @@ import { FurnitureComponent } from './furniture/furniture.component';
         DealsComponent,
         ToymartComponent,
         FurnitureComponent,
+        RegisterComponent,
+        LoginComponent,
+       ProductdetailsComponent
+      
      
    
   ],
   imports: [
     BrowserModule,
-    FormsModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
     
   ],
   providers: [],

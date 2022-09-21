@@ -1,0 +1,64 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "pname": "Teddy Bear",
+      "pdescription": "Emporium 2 Feet Soft Teddy Bear Red 60.20 cm ( Red ) - 60.2 cm  (Red)",
+      "price": "5000",
+      "img": "https://rukminim1.flixcart.com/image/832/832/l0y6qa80/stuffed-toy/t/0/x/3-feet-very-cute-long-soft-hugable-teddy-bear-best-for-gift-85cm-original-imagcm97darruepm.jpeg?q=70"
+    },
+    {
+      "id": 2,
+      "pname": "Mickey Mouse",
+      "pdescription": "Minnie Mouse Soft Toy Mouse Stuffed Soft Toy, 60 cm - 60 cm (Red) - 60 cm  (Red)",
+      "price": "2000",
+      "img": "https://rukminim1.flixcart.com/image/416/416/kkoc70w0/stuffed-toy/n/c/g/mickey-mouse-soft-stuffed-toys-30-cm-30-cm-multicolor-30-gi4n-original-imafzynyqdwhur2g.jpeg?q=70"
+    },
+    {
+      "id": 3,
+      "pname": "Puppy Doll",
+      "pdescription": "Cute Sitting Puppy Dog Doll Toy for Kid - 28 cm (Yellow)",
+      "price": "1500",
+      "img": "https://hamleysgumlet.gumlet.io/product/492410011/665/492410011-1.jpeg"
+    }
+  ],
+  "users": [
+    {
+      "username": "john@gmail.com",
+      "useremail": "pallavikatari@gmail.com",
+      "password": "John@123",
+      "mobile": "",
+      "id": 1
+    },
+    {
+      "username": "Admin",
+      "useremail": "admin@gmail.com",
+      "password": "admin@123",
+      "mobile": "9898989898",
+      "id": 3
+    },
+    {
+      "username": "Jancy",
+      "useremail": "jancy@gmail.com",
+      "password": "jancy123",
+      "mobile": "",
+      "id": 4
+    },
+    {
+      "username": "b",
+      "useremail": "bhavanasvastrad@gmail.com",
+      "password": "",
+      "mobile": "",
+      "id": 5
+    },
+    {
+      "username": "Bhavana",
+      "useremail": "bhavanasvastrad@gmail.com",
+      "password": "Bhavana1830@",
+      "mobile": "8951897993",
+      "id": 6
+    }
+    
+  ],
+  "cart": []
+}

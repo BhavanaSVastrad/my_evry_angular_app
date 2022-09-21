@@ -8,14 +8,6 @@ export class ContactusService {
 
   constructor() { }
   contact: Contactus[] = [
-    {
-     
-      name: 'Samsung',
-      phonenumber: '3245678',
-      details: 'sfdghjk',
-      gmail:'sfdgh',
-      img: 'https://th.bing.com/th/id/OIP.fbJktvTY6j5ZEkcL6R7BZAHaEg?pid=ImgDet&rs=1'
-    }
    
   ];
 

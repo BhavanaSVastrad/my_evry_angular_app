@@ -1,14 +1,13 @@
-
+<!-- <marquee behavior="right" direction="">All Categories of products available at an Affordable price</marquee> -->
 <br>
-
+<br>
 <div *ngFor="let a of all" style="border:none;float:left;" class="m">
   
-   
+    <button style="margin-bottom: 30px; border-color:blueviolet; background-color:rgb(205, 243, 252); border-radius:40px; border-width: 3px;">
         <br>
         <img [src]="a.img" class="prodimg">
-
-        <!-- <p [style.color]="'blue'" [style.font-weight]="'bold'">{{a.pname}}</p> -->
+        <p [style.color]="'blue'" [style.font-weight]="'bold'">{{a.pname}}</p>
         <br>
-
+    </button>
    <br>
 </div>
