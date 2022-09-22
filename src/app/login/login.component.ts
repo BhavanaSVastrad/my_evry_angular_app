@@ -1,12 +1,15 @@
 
 import { HttpClient } from '@angular/common/http';
-import { error } from '@angular/compiler/src/util';
+
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder } from '@angular/forms';
+import { FormGroup } from '@angular/forms';
+import { Validators } from '@angular/forms';
+
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment';
 import { UserService } from '../user.service';
-//npm install sweetalert2
+
 import Swal from 'sweetalert2';
 
 @Component({
@@ -16,17 +19,17 @@ import Swal from 'sweetalert2';
 })
 export class LoginComponent implements OnInit {
 public loginForm!:FormGroup
-//Authenticate user details from userapi
+
 userapi=environment.userapi;
 
 submitted = false;
 get f() { return this.loginForm.controls; }
-//constructor injection
+
   constructor(private formBuilder:FormBuilder,private http:HttpClient,private router:Router,
     private userService: UserService) { }
 
   ngOnInit(): void {
-    this.userService.validateAuth(false); //data parameter in your userservice
+    this.userService.validateAuth(false); 
     this.loginForm = this.formBuilder.group({
       useremail: ['', [Validators.required, Validators.email,Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')]],
       password: ['', [Validators.required, Validators.minLength(6)]]

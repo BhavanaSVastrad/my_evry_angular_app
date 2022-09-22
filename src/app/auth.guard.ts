@@ -1,6 +1,12 @@
 import { Injectable } from '@angular/core';
-import { ActivatedRouteSnapshot, CanActivate,Router, RouterStateSnapshot, UrlTree } from '@angular/router';
+
+import { ActivatedRouteSnapshot } from '@angular/router';
+import { CanActivate } from '@angular/router';
+import { Router } from '@angular/router';
+import { RouterStateSnapshot } from '@angular/router';
+import { UrlTree } from '@angular/router';
 import { Observable } from 'rxjs';
+
 //UserService for authentication of route guards
 import { UserService } from './user.service';
 

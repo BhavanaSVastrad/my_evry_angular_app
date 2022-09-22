@@ -35,27 +35,27 @@ import { ProductdetailsComponent } from './productdetails/productdetails.compone
 
     NavbarComponent,
     CarouselComponent,
-   
+
     SearchComponent,
-   
+
     ContactusComponent,
-        VehiclesComponent,
-        DollsComponent,
-        GamesComponent,
-        GamesdealComponent,
-        CounterComponent,
-        CounterchildComponent,
-        AdvertisementComponent,
-        AllcategoriesComponent,
-        DealsComponent,
-        ToymartComponent,
-        FurnitureComponent,
-        RegisterComponent,
-        LoginComponent,
-       ProductdetailsComponent
-      
-     
-   
+    VehiclesComponent,
+    DollsComponent,
+    GamesComponent,
+    GamesdealComponent,
+    CounterComponent,
+    CounterchildComponent,
+    AdvertisementComponent,
+    AllcategoriesComponent,
+    DealsComponent,
+    ToymartComponent,
+    FurnitureComponent,
+    RegisterComponent,
+    LoginComponent,
+    ProductdetailsComponent
+
+
+
   ],
   imports: [
     BrowserModule,
@@ -63,7 +63,7 @@ import { ProductdetailsComponent } from './productdetails/productdetails.compone
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule
-    
+
   ],
   providers: [],
   bootstrap: [AppComponent]
