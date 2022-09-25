@@ -1,6 +1,7 @@
 input {
-    width: 60%;
+    width: 70%;
     margin-left: 50px;
+    font-weight: bold;
 }
 
 label {
@@ -13,24 +14,30 @@ h4{
 
 form {
     padding: 20px;
-    margin-left: 200px;
-    margin-top: 40px;
-    width: 40%;
+    margin-left: 100px;
+    margin-top: 10px;
+    width: 60%;
+    background-color: bisque;
     border-style: inset;
     border-radius: 10px;
     border-color: black;
+    border-width: 3px;
+    /* background-color: blanchedalmond; */
     box-shadow: 2px 3px 4px yellow;
 }
 
-form:hover {
+/* form:hover {
     color: rgb(174, 155, 11);
     background-color: rgb(40, 40, 40);
     transform:scale(1.2);
 
-}
+} */
 
 button {
     margin-left: 100px;
+    font-weight: bolder;
+    font-size: x-large;
+    width: 150px;
 }
 
 span {

@@ -23,3 +23,54 @@ marquee{
     font-weight: bold;
     font-style: italic;
 }
+.carousel-image{
+    height: 300px;
+    width: 700px;
+}
+.flip-card {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    margin-left:20px;
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+   
+  }
+  
+  .flip-card-front {
+    
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #3c29b9;
+    color: white;
+    transform: rotateY(180deg);
+   
+  }
+  .hover-image{
+    height: 200px;
+    width: 200px;
+    margin-left: 30px;
+  }

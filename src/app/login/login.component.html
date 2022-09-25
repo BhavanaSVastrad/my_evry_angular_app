@@ -1,12 +1,14 @@
-<div class="mt-5">
+<div class="mt-1">
     <div class="col-md-12 min-vh-100 d-flex flex-column">
       <div class="row">
           <div class="col-lg-6 col-md-8 mx-auto">
                     <div class="login-form">
-                            <form class="mt-5" [formGroup]="loginForm" >
-                                <h2 class="text-center secondary ms-mb-m main-heading ng-binding">Login</h2>
-                                <br>
-                                <div class="mt-5">
+                            <form class="mt-5" [formGroup]="loginForm" (ngSubmit)="login()">
+                                <p style="font-weight: bolder; font-size:xx-large;"> <marquee behavior="" direction="">LOGIN</marquee> </p>
+                                <img src="https://media.istockphoto.com/vectors/kids-toys-set-vector-id930315076?k=20&m=930315076&s=170667a&w=0&h=kiD3i7DNk-UKwEMcPFJEVY6fAdPdVgOW3PDHkZTRSRY=" alt="" width="300px" style="margin-left:20px;">
+                               
+                                <div class="mt-1">
+                                    <br>
                                 <div class="form-group">
                                     <input type="email" class="form-control" name="useremail" formControlName="useremail" placeholder="User Email">
                                     <label class="error ng-binding" *ngIf="submitted && f['useremail'].errors?.['required']">Email is required</label>
@@ -29,11 +31,10 @@
                                     </p><p>
                                     </p>
                                 </div>
-                                </div>
-                            </form>
-                        </div>
-                 </div>
+                            </div>
+                        </form>
+                    </div>
              </div>
-        </div>
+         </div>
     </div>
- 
+</div>

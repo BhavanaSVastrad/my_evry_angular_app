@@ -1,33 +1,49 @@
-<div class="mt-5" >
+<div class="mt-1">
     <div class="col-md-12 min-vh-100 d-flex flex-column">
+
         <div class="login-form">
-            <form class="mt-5" [formGroup]="registerForm" (ngSubmit)="submitHandler()">
-                <h2 class="text-center secondary ms-mb-m main-heading ng-binding">Signup</h2>
+
+
+            <form class="mt-1" [formGroup]="registerForm" (ngSubmit)="submitHandler()">
+                <fieldset>
+               <legend style="color: rgb(255, 255, 255); font-weight:bold; margin-left:200px; background-color: black; width: 100px; border-radius: 200px;">SIGNUP</legend>
+            </fieldset>
+                <!-- <h2 class="text-center secondary ms-mb-m main-heading ng-binding" style="font-weight: bold;font-style:italic; background-color:rgb(239, 132, 25); width: 120px; margin-left: 200px; border-radius: 100px;">Signup</h2> -->
+                <img src="https://img.freepik.com/free-vector/shelf-box-full-toys-white_1308-41753.jpg" alt=""
+                    width="400px" style="margin-left: 60px; margin-top: 10px;">
+                <br>
                 <br>
                 <div class="form-group">
                     <input type="text" class="form-control" name="username" formControlName="username"
                         placeholder="Enter Username">
-                    <label class="error ng-binding" *ngIf="submitted && f['username'].invalid">Name is required
-                    </label>
+                        <label class="error ng-binding" *ngIf="submitted && f['username'].errors?.['required']">Username
+                            is
+                            required</label>
+                        
+                            <label class="error ng-binding" *ngIf=" f['username'].errors?.['pattern']">
+                                pattern does not match</label>
                 </div>
                 <br>
                 <div class="form-group">
-                    <input type="email" class="form-control" name="useremail" formControlName="useremail"
+                    <input type="gmail" class="form-control" name="useremail" formControlName="useremail"
                         placeholder="Enter email">
                     <label class="error ng-binding" *ngIf="submitted && f['useremail'].invalid">Email is required
-                        </label>
-                    <label class="error ng-binding" *ngIf="submitted && f['useremail'].errors?.['useremail']">Email must
-                        be a
-                        valid email address</label>
+                    </label>
+                   
                 </div>
                 <br>
                 <div class="form-group">
                     <input type="password" class="form-control" name="password" formControlName="password"
                         placeholder="Enter password">
-                    <label class="error ng-binding" *ngIf="submitted && f['password'].errors?.['password']">Password is
+                    <!-- <label class="error ng-binding" *ngIf="submitted && f['password'].invalid">Password is
+                        required</label> -->
+                    <label class="error ng-binding" *ngIf="submitted && f['password'].errors?.['required']">Password
+                        is
                         required</label>
-                    <label class="error ng-binding" *ngIf="submitted && f['password'].errors?.['minlength']">Password
-                        must be at least 6 characters</label>
+                    <label class="error ng-binding" *ngIf=" f['password'].errors?.['minlength']">Password must be at
+                        least 6 characters</label>
+                        <label class="error ng-binding" *ngIf=" f['password'].errors?.['pattern']">
+                            pattern does not match</label>
                 </div>
                 <br>
                 <div class="form-group">
@@ -36,18 +52,41 @@
                     <label class="error ng-binding" *ngIf="submitted && f['mobile'].errors?.['required']">Mobile number
                         is
                         required</label>
+                        <label class="error ng-binding" *ngIf="submitted && f['mobile'].errors?.['pattern']">Only Numbers are allowed</label>
 
                 </div>
                 <br>
                 <button type="submit" class="btn btn-warning">Register</button>
                 <div class="text-center ms-mt-x ms-mb-m register-already-account" style="padding-top:30px">
-                    <span class="ms-fs-12 ng-binding">Already have an account?
-                        <a class="secondary ng-binding" href="login">
+                    <span class="ms-fs-12 ng-binding" style="background-color: black; color:white;">Already have an account?
+                        <a class="secondary ng-binding" href="login" style="color: white;">
                             Login!
                         </a>
                     </span>
                 </div>
             </form>
+
         </div>
     </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

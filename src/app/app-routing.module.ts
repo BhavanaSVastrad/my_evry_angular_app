@@ -14,7 +14,8 @@ import { AllcategoriesComponent } from './allcategories/allcategories.component'
 import { FurnitureComponent } from './furniture/furniture.component';
 import { LoginComponent } from './login/login.component';
 import { ProductdetailsComponent } from './productdetails/productdetails.component';
-
+import { CartItemsComponent } from './cart-items/cart-items.component';
+import { GamesnewComponent } from './gamesnew/gamesnew.component';
 const routes: Routes = [
   {path:'',component:CarouselComponent},
   
@@ -27,7 +28,10 @@ const routes: Routes = [
   {path:'deals',component:ToymartComponent},
   {path:'categories',component:AllcategoriesComponent},
   {path:'furniture',component:FurnitureComponent},
-  {path:'prod_details',component:ProductdetailsComponent}
+  {path:'prod_details',component:ProductdetailsComponent},
+  {path:'cartitem',component:CartItemsComponent},
+  {path:'gamesnew',component:GamesnewComponent}
+
 
 ];
 

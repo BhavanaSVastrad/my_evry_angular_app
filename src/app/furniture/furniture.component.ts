@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as allcategories from "../data/allcategories.json";
+import * as doll from "../data/furniture.json";
 @Component({
   selector: 'app-furniture',
   templateUrl: './furniture.component.html',
@@ -11,5 +11,5 @@ export class FurnitureComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  all:any=(allcategories as any).default;
+  doll:any=(doll as any).default;
 }

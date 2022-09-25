@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../user.service';
+
+//Cart count
+import { CartService } from '../cart.service';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -7,11 +10,12 @@ import { UserService } from '../user.service';
 })
 export class NavbarComponent implements OnInit {
   auth:boolean=false;
-  title="Toy-Mart"
+  cartCount: number=0;
+  title="ToyMart"
   public image="https://dcassetcdn.com/design_img/1580/1427/1427_13937_1580_image.jpg";
   
   
-  constructor(private authService:UserService) { }
+  constructor(private authService:UserService,private cartSvc:CartService) { }
   productentered: string=' '
 
   //Event
@@ -31,20 +35,21 @@ export class NavbarComponent implements OnInit {
         this.auth = data;
       }
     );
-    // this.cartSvc.getCartItems().subscribe (     
-    //   (response) =>
-    //    {        
-    //     this.cartCount=response.length;
-    //     console.log(this.cartCount);
-    //    }
-    //  ) 
-    // this.cartSvc.countSubject.subscribe (     
-    //   (response) =>
-    //    {        
-    //     this.cartCount=response;
-    //     console.log(this.cartCount);
-    //    }
-    //  ) 
+    //Cart count
+    this.cartSvc.getCartItems().subscribe (     
+      (response) =>
+       {        
+        this.cartCount=response.length;
+        console.log(this.cartCount);
+       }
+     ) 
+    this.cartSvc.countSubject.subscribe (     
+      (response) =>
+       {        
+        this.cartCount=response;
+        console.log(this.cartCount);
+       }
+     ) 
   }
 
 }

@@ -27,6 +27,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 
 import { ProductdetailsComponent } from './productdetails/productdetails.component';
+import { CartItemsComponent } from './cart-items/cart-items.component';
+import { GamesnewComponent } from './gamesnew/gamesnew.component';
+
 
 
 @NgModule({
@@ -52,7 +55,10 @@ import { ProductdetailsComponent } from './productdetails/productdetails.compone
     FurnitureComponent,
     RegisterComponent,
     LoginComponent,
-    ProductdetailsComponent
+    ProductdetailsComponent,
+    CartItemsComponent,
+    GamesnewComponent,
+
 
 
 

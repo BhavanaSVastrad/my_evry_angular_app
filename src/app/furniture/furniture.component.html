@@ -1,38 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bootstrap Accordion with Plus Minus Icon</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-<style>
-	/* Custom style */
-    .accordion-button::after {
-      background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
-      transform: scale(.7) !important;
-    }
-    .accordion-button:not(.collapsed)::after {
-      background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
-    }
-</style>
-</head>
-<body>
-<div class="m-4" *ngFor="let a of all">
-    <div class="accordion" id="myAccordion" >
-        <div class="accordion-item" >
-            <h2 class="accordion-header" id="headingOne">
-                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne">{{a.pname}}</button>									
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
-                <div class="card-body">
-                    <p>{{a.pdescription}}</p>
-                    <img [src]="a.img" alt="" height="100px" width="100px">
+<!-- <div class="container d-flex align-items-center justify-content-center flex-wrap">
+    <div class="box" *ngFor="let d of doll">
+        <div class="body">
+            <div class="imgContainer">
+               <button style="box-sizing: border-box; background-color:black;"> <img [src]="d.img" alt=""></button>
+            </div>
+            <div class="content d-flex flex-column align-items-center justify-content-center">
+                <div>
+                    <h3 class="text-white fs-5">{{d.pname}}</h3>
+                    <p class="fs-6 text-white">{{d.pdescription}}</p>
                 </div>
             </div>
         </div>
-        
+    </div>
+   
+</div> -->
+<!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" style="background-color:rgb(11, 12, 12);  height: 800px;">
+   
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+   
+        <img src="https://img.freepik.com/premium-photo/photo-frame-childrens-playroom-interior-with-toys-kids-furniture-table-with-chairs-shelves-scandinavian-style-3d-rendering_180507-739.jpg"  class="carousel-image" alt="..." style="margin-left: 230px; width: 800px; margin-top: 30px;">
+        <hr style="color: white; margin-top: 10px; border-color: rgb(255, 255, 255);border-width: 10px; ">
+      
+    </div>
+      
+    <marquee style="color: white;font-weight: bolder; font-size: xx-large;">All Varieties of Kids Furniture at 50% off</marquee> 
+    <hr style="color: white;">
+  </div> -->
+
+<div class="f">
+
+   <div *ngFor="let d of doll" style="float: left; margin-left: 120px; margin-top: 20px;">
+   <img [src]="d.img" alt="" height="200px" width="200px" style="  box-sizing: border-box; border-radius: 500px;">
+
+  </div>
+</div>
+
+<marquee class="m" style="font-weight: bolder; font-size: xx-large;">All Varieties of Kids Furniture at 50% off</marquee> 
+<div style="  height: 400px; width: 100%;  background-color: black;"> 
+<div class="container" style="margin-left: 30px;">
+    <div class="card" *ngFor="let d of doll" >
+        <div class="firstrow">  <span>{{d.pname}}</span> </div>
+     
+        <div class="mediumrow"> <img [src]="d.img">
+            <div class="content">
+                {{d.pname}}
+                <br>
+                {{d.pdescription}}
+            </div>
+        </div>
+        <div class="lastrow">
+            <p>Time left:</p>
+            <div class="boxes"> <span>02</span> <span>23</span> <span>42</span> </div> <button>Buy</button>
+        </div>
     </div>
 </div>
-</body>
-</html>                            
+</div>

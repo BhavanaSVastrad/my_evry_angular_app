@@ -1,7 +1,7 @@
 <marquee behavior="" direction="right" >Vehicle Toys at Flat 20% Off</marquee>
-<br><div *ngFor="let product of products" style="float: left;" [ngSwitch]="product.Status">
+<br><div *ngFor="let product of products" style="float: left; margin-left: 50px;" [ngSwitch]="product.Status">
     <div class="row" style="height:550px;">
-        <div class="card col-sm-4 "
+        <div class="card col-sm-7 "
             style="width: 300px; margin-left: 100px;margin-bottom: 100px; border-top-color: blueviolet;border-width: 4px; border-bottom-color: brown; border-left-color: blue; border-right-color: deeppink;">
             <img [src]="product.image" class="card-img-top" alt="..."
                 style="margin-left: 30px; margin-top:50px; height:220px; width: 220px;">

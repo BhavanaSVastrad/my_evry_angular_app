@@ -1,5 +1,8 @@
 marquee{
-    text-shadow:2px 3px 3px rgba(251, 226, 3, 0.724);
+    text-shadow:2px 3px 3px rgba(3, 189, 251, 0.724);
     color:rgb(4, 4, 4);
-    font-size: 28px;
+    font-size: 35px;
+    font-weight: bolder;
+    font-style: oblique;
+
 }
