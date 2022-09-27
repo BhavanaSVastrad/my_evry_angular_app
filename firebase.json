@@ -1,6 +1,7 @@
 {
   "hosting": {
     "public": "dist/my_evry_angular_app",
+    "site":"toymart-angular",
     "ignore": [
       "firebase.json",
       "**/.*",
