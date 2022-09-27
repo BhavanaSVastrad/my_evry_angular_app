@@ -3,6 +3,7 @@ import { UserService } from '../user.service';
 
 //Cart count
 import { CartService } from '../cart.service';
+import { AdminService } from '../admin.service';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -10,12 +11,13 @@ import { CartService } from '../cart.service';
 })
 export class NavbarComponent implements OnInit {
   auth:boolean=false;
+  admin:boolean =false;
   cartCount: number=0;
   title="ToyMart"
   public image="https://dcassetcdn.com/design_img/1580/1427/1427_13937_1580_image.jpg";
   
   
-  constructor(private authService:UserService,private cartSvc:CartService) { }
+  constructor(private authService:UserService,private cartSvc:CartService, private adminService: AdminService) { }
   productentered: string=' '
 
   //Event
@@ -33,6 +35,13 @@ export class NavbarComponent implements OnInit {
       {
         console.log('auth inside nav component: ' + data);
         this.auth = data;
+      }
+    );
+    //Admin Service
+    this.adminService.adminSubject.subscribe(
+      data => {
+        console.log('admin inside nav component: ' + data);
+        this.admin = data;
       }
     );
     //Cart count

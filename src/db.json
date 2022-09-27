@@ -57,7 +57,71 @@
       "password": "Sahana11",
       "mobile": "9164164511",
       "id": 8
+    },
+    {
+      "username": "Bhavana",
+      "useremail": "b@gmail.com",
+      "password": "Bhavana1830",
+      "mobile": "7145768989",
+      "id": 9
+    },
+    {
+      "username": "Bhavana",
+      "useremail": "b@gmail.com",
+      "password": "Bhavana1830",
+      "mobile": "7145768989",
+      "id": 10
     }
   ],
-  "cart": []
+  "admin": [
+    {
+      "id": 1,
+      "username": "Admin",
+      "useremail": "admin@gmail.com",
+      "password": "admin@123",
+      "mobile": "9898989898"
+    }
+  ],
+  "cart": [
+    {
+      "pname": "Teddy Bear",
+      "pdescription": "Emporium 2 Feet Soft Teddy Bear Red 60.20 cm ( Red ) - 60.2 cm  (Red)",
+      "price": 4999,
+      "img": "https://rukminim1.flixcart.com/image/832/832/l0y6qa80/stuffed-toy/t/0/x/3-feet-very-cute-long-soft-hugable-teddy-bear-best-for-gift-85cm-original-imagcm97darruepm.jpeg?q=70",
+      "quantity": 1,
+      "id": 1
+    },
+    {
+      "pname": "Puppy Doll",
+      "pdescription": "Cute Sitting Puppy Dog Doll Toy for Kid - 28 cm (Yellow)",
+      "price": 2500,
+      "img": "https://hamleysgumlet.gumlet.io/product/492410011/665/492410011-1.jpeg",
+      "quantity": 1,
+      "id": 3
+    },
+    {
+      "pname": "Clapjoy Spell Master",
+      "pdescription": "Spell Learn for Kids Learning Word Game with Flash Cards, Montessori Learning Educational Toy for Kids age 2-6 years",
+      "price": 3999,
+      "img": "https://www.clapjoy.com/wp-content/uploads/2022/03/WhatsApp-Image-2022-03-24-at-9.55.26-AM.jpeg",
+      "quantity": 1,
+      "id": 4
+    },
+    {
+      "pname": "Aeroplane",
+      "pdescription": "Bestoys Airbus A380 Airplane Toy Small Remote Control (Multicolor, Pack of: 1)",
+      "price": "4000",
+      "img": "https://m.media-amazon.com/images/I/71hrCgLi6VL._SL1477_.jpg",
+      "quantity": 1,
+      "id": 5
+    },
+    {
+      "pname": "Teddy Bear",
+      "pdescription": "Emporium 2 Feet Soft Teddy Bear Red 60.20 cm ( Red ) - 60.2 cm  (Red)",
+      "price": 4999,
+      "img": "https://rukminim1.flixcart.com/image/832/832/l0y6qa80/stuffed-toy/t/0/x/3-feet-very-cute-long-soft-hugable-teddy-bear-best-for-gift-85cm-original-imagcm97darruepm.jpeg?q=70",
+      "quantity": 1,
+      "id": 6
+    }
+  ]
 }
