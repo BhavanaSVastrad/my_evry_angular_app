@@ -1,0 +1,49 @@
+[debug] [2022-09-27T13:38:35.042Z] ----------------------------------------------------------------------
+[debug] [2022-09-27T13:38:35.044Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\EI13118\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-09-27T13:38:35.044Z] CLI Version:   11.10.0
+[debug] [2022-09-27T13:38:35.045Z] Platform:      win32
+[debug] [2022-09-27T13:38:35.045Z] Node Version:  v16.17.0
+[debug] [2022-09-27T13:38:35.046Z] Time:          Tue Sep 27 2022 19:08:35 GMT+0530 (India Standard Time)
+[debug] [2022-09-27T13:38:35.046Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-09-27T13:38:35.111Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-27T13:38:35.112Z] > authorizing via signed-in user (bhavanasvastrad@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\EI13118\my_evry_angular_app
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-09-27T13:38:41.924Z] Using project from CLI flag: toymart-angular
+[debug] [2022-09-27T13:38:41.926Z] > refreshing access token with scopes: []
+[debug] [2022-09-27T13:38:41.928Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-09-27T13:38:41.928Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-09-27T13:38:42.286Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-09-27T13:38:42.286Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-09-27T13:38:42.336Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/toymart-angular [none]
+[debug] [2022-09-27T13:38:43.009Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/toymart-angular 200
+[debug] [2022-09-27T13:38:43.009Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/toymart-angular {"projectId":"toymart-angular","projectNumber":"862648951788","displayName":"ToyMart-angular","name":"projects/toymart-angular","resources":{"hostingSite":"toymart-angular"},"state":"ACTIVE","etag":"1_09b65b69-ae0d-4fc5-8fc7-aa60f6f3942d"}
+[info] i  Using project toymart-angular (ToyMart-angular) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
