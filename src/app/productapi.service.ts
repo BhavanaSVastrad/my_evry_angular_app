@@ -10,25 +10,25 @@ export class ProductapiService {
   constructor(private http:HttpClient) { }
 
   postProducts(data:any){
-    return this.http.post<any>("http://localhost:3000/posts", data).pipe(map((res:any)=>{
+    return this.http.post<any>("https://heroku-json-server-fakedbs.herokuapp.com/posts", data).pipe(map((res:any)=>{
       return res;
     }))
   }
 
   getProductDetails(){
-    return this.http.get<any>("http://localhost:3000/posts").pipe(map((res:any)=>{
+    return this.http.get<any>("https://heroku-json-server-fakedbs.herokuapp.com/posts").pipe(map((res:any)=>{
       return res;
     }))
   }
 
   updateProducts(data:any, id:number){
-    return this.http.put<any>("http://localhost:3000/posts/"+id, data).pipe(map((res:any)=>{
+    return this.http.put<any>("https://heroku-json-server-fakedbs.herokuapp.com/posts"+id, data).pipe(map((res:any)=>{
       return res;
     }))
   }
 
   deleteProducts(id:number){
-    return this.http.delete<any>("http://localhost:3000/posts/"+id).pipe(map((res:any)=>{
+    return this.http.delete<any>("https://heroku-json-server-fakedbs.herokuapp.com/posts"+id).pipe(map((res:any)=>{
       return res;
     }))
   }
