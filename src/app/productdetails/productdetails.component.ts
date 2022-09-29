@@ -39,9 +39,10 @@ export class ProductdetailsComponent implements OnInit {
     this.productModelObj.price = this.formValue.value.price;
     this.productModelObj.img = this.formValue.value.img;
 
-    this.api.postProducts(this.productModelObj).subscribe(res=>{
+  
+    this.api.postProducts(this.productModelObj).subscribe(res => {
       console.log(res);
-      alert("New product added successfully!")
+      alert("New account added successfully!")
       let ref = document.getElementById('cancel')
       ref?.click();
       this.formValue.reset();
