@@ -10,7 +10,7 @@ import { environment } from 'src/environments/environment';
 })
 export class ProductapiService {
   constructor(private http:HttpClient) { }
-posturl=environment.postapi;
+posturl=environment.postsapi;
   postProducts(data:any){
     return this.http.post<any>(this.posturl, data).pipe(map((res:any)=>{
       return res;

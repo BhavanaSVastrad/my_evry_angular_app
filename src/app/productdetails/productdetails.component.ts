@@ -1,14 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import {  FormBuilder, FormGroup } from '@angular/forms';
 import { ProductModel } from '../product-model';
 import { ProductapiService } from '../productapi.service';
-import { Router } from '@angular/router';
+import {  FormBuilder, FormGroup } from '@angular/forms';
+
+
+
 @Component({
   selector: 'app-productdetails',
   templateUrl: './productdetails.component.html',
   styleUrls: ['./productdetails.component.css']
 })
 export class ProductdetailsComponent implements OnInit {
+  
+
   formValue!: FormGroup;
   productModelObj : ProductModel = new ProductModel();
   productData!: any;
@@ -23,8 +27,9 @@ export class ProductdetailsComponent implements OnInit {
       pdescription:[''],
       price:[''],
       img:['']
-    })
+    });
     this.getProducts();
+    
   }
 
   clickAddProduct(){
@@ -39,10 +44,9 @@ export class ProductdetailsComponent implements OnInit {
     this.productModelObj.price = this.formValue.value.price;
     this.productModelObj.img = this.formValue.value.img;
 
-  
-    this.api.postProducts(this.productModelObj).subscribe(res => {
+    this.api.postProducts(this.productModelObj).subscribe(res=>{
       console.log(res);
-      alert("New account added successfully!")
+      alert("New product added successfully!")
       let ref = document.getElementById('cancel')
       ref?.click();
       this.formValue.reset();
@@ -54,11 +58,7 @@ export class ProductdetailsComponent implements OnInit {
   }
 
   getProducts(){
-    this.api.getProductDetails().subscribe(res=>{
-      this.productData = res;
-    }, err=>{
-      
-    })
+    this.api.getProductDetails().subscribe(res=>{  this.productData = res;}, err=>{})
   }
 
   deleteProducts(product: any){
@@ -95,4 +95,5 @@ export class ProductdetailsComponent implements OnInit {
       this.getProducts();
     })
   }
+
 }

@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "toymart-angular"
-  }
+    "default": "angulartoymart",
+    "angular": "angulartoymart"
+  },
+  "targets": {},
+  "etags": {}
 }
